@@ -1,0 +1,241 @@
+*{
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+.About_Me_Container{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+ 
+  
+}
+.About_Me_Text{
+    width: 50%;
+    height: 100%;
+     display: flex;
+     flex-direction: column;
+ 
+}
+.About_Me_Container img{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+   border:5.5px solid #22d3ee;
+   object-fit: cover;
+}
+.About_Me_Text h2 {
+    font-size: 45px;
+    color: #22d3ee;
+}
+.About_Me_Text p {
+    font-size: 18px;
+    color:  #9ca3af;
+}
+.About_Me_Text i{
+    font-size: 24px;
+  color:  #9ca3af;
+}
+.Social_Media_Container{
+    width: 78px;
+    height:55px;
+    display:flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+
+}
+.About_Me_Text i{
+    font-size: 30px;
+  color:  #9ca3af;
+  transition: ease-in-out;
+ transform: scale(1);
+}
+.About_Me_Text i:hover{
+    transform: scale(1.1);
+    color: #22d3ee;
+    transition: 0.3s ease;
+}
+
+
+.Buttons_Container{
+    width: 425px;
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Buttons_Container button{
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    
+    text-decoration: none;
+}
+.Buttons_Container button a{
+    text-decoration: none;
+    
+     color: #22d3ee;
+}
+.Buttons_Container button:nth-child(2) i{
+        color: #67e8f9;
+        margin-right: 10px;
+        font-size: 18px;
+}
+.Buttons_Container button:nth-child(1){
+    background-color: #22d3ee;
+   transition: transform 0.3s ease;
+  transform: scale(1);
+   color: #111827;
+
+}
+ .Buttons_Container button:nth-child(1) a{
+     color: #111827;
+ }
+
+.Buttons_Container button:nth-child(1):hover{
+    background-color: #67e8f9;
+    transform: scale(1.1) rotate(2deg);
+}
+ 
+.Buttons_Container button:nth-child(2){
+   border: 2px solid #22d3ee;
+  background: transparent;
+        transition:  0.3s ease;
+  transform: scale(1);
+   color: #22d3ee;
+
+}
+ 
+.Buttons_Container button:nth-child(2):hover a , 
+.Buttons_Container button:nth-child(2):hover i, 
+.Buttons_Container button:nth-child(2):hover{
+
+    background-color: #67e8f9;
+    transform: scale(1.1) rotate(2deg);
+      color: #111827;
+     
+      
+}
+ 
+@media screen and (min-width: 375px) and (max-width: 768px){
+
+    .About_Me_Container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+ gap: 20px;
+  
+}
+ .About_Me_Container img{
+    width: 200px;
+    height: 200px;
+ }
+ .About_Me_Text{
+    width: auto;
+    height:auto;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     align-items: center;
+     justify-content: center;
+ 
+}
+.About_Me_Text h2 {
+    font-size: 30px;
+    color: #22d3ee;
+ 
+    font-weight: 600;
+}
+.About_Me_Text p {
+    font-size: 15px;
+    color:  #9ca3af;
+    font-weight: 400;
+    width:375px;
+     height: auto;
+}
+.About_Me_Text i{
+    font-size: 27px;
+  color:  #9ca3af;
+  transition: ease-in-out;
+ transform: scale(1);
+}
+.About_Me_Text i:hover{
+    transform: scale(1.1);
+    color: #22d3ee;
+    transition: 0.3s ease;
+}
+.Buttons_Container{
+    width:100%;
+    height: 113px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Buttons_Container button{
+    width: 100%;
+    height: 50px;
+    font-size: 15px;
+    font-weight: 700;
+    border: none;
+    border-radius: 8px;
+    
+    text-decoration: none;
+}
+.Buttons_Container button a{
+    text-decoration: none;
+    
+     color: #22d3ee;
+}
+.Buttons_Container button:nth-child(2) i{
+        color: #67e8f9;
+        margin-right: 10px;
+        font-size: 18px;
+}
+.Buttons_Container button:nth-child(1){
+    background-color: #22d3ee;
+   transition: transform 0.3s ease;
+  transform: scale(1);
+   color: #111827;
+
+}
+ 
+
+.Buttons_Container button:nth-child(1):hover{
+    background-color: #67e8f9;
+    transform: scale(1.1) rotate(0.5deg);
+}
+ 
+.Buttons_Container button:nth-child(2){
+   border: 2px solid #22d3ee;
+  background: transparent;
+        transition:  0.3s ease;
+  transform: scale(1);
+   color: #22d3ee;
+
+}
+ 
+.Buttons_Container button:nth-child(2):hover a , 
+.Buttons_Container button:nth-child(2):hover i, 
+.Buttons_Container button:nth-child(2):hover{
+
+    background-color: #67e8f9;
+    transform: scale(1.1) rotate(0.5deg);
+      color: #111827;
+     
+      
+}
+ 
+}
