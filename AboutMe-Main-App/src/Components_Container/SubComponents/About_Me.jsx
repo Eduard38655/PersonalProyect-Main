@@ -3,7 +3,7 @@
 import CV from "../../../public//CV - Eduardo Ferreras - Programador Web.pdf"
 import Styles from "../../Container_Styles/About_Me.module.css"
 import PersonlIMG from "../../Images/Foto_Perfile_Proyect_Main.jpg"
-/*Datos Personales */
+/*Datos Personales - 2025 */
 function About_Me(params) {
     return(<div className={Styles.About_Me_Container} id="about" >
 
