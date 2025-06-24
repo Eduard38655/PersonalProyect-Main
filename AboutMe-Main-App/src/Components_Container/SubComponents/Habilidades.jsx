@@ -12,7 +12,7 @@ function Habilidade(params) {
 <div className={Styles.Frontend_Container}>
 
 <div className={Styles.Frontend_SubContainer}>
-{ fronted.map((tech) => (
+{ fronted.map((tech,index) => (
     <div key={tech.id}>
         {tech.icon.includes("fa-") ? ( <i className={tech.icon} style={{color: tech.style.color}}></i>) :
          (<img src={tech.icon} alt={tech.name} />)}

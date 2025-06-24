@@ -7,7 +7,7 @@ function Proyectos(params) {
 
 useEffect(()=>{
     setProyectos(ProyectosDataBase);
-console.log(proyectos);
+
 
 },[])
     return(<div className={Styles.Proyectos_Container} id="projects">
@@ -27,7 +27,7 @@ console.log(proyectos);
 
             <div className={Styles.Proyectos_Tecnologias_Container}>
             {proyecto.tecnologias.map((tec, index) => (
-                <p><span key={index} className={Styles.Proyectos_Tecnologias}>{tec}</span></p>
+                <p key={index}><span   className={Styles.Proyectos_Tecnologias}>{tec}</span></p>
             ))  }
             </div>
 

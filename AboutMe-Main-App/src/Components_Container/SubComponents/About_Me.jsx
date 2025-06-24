@@ -1,6 +1,8 @@
 
  import { Link } from "react-router-dom"
+import CV from "../../../public//CV - Eduardo Ferreras - Programador Web.pdf"
 import Styles from "../../Container_Styles/About_Me.module.css"
+import PersonlIMG from "../../Images/Foto_Perfile_Proyect_Main.jpg"
 /*Datos Personales */
 function About_Me(params) {
     return(<div className={Styles.About_Me_Container} id="about" >
@@ -40,7 +42,7 @@ Poseo un fuerte dominio tanto del frontend como del backend.Me encanta enfrentar
 <button><a href="#projects"> Ver mis Proyectos</a></button>
 
 <button> 
-  <a href="../Public/CV - Eduardo Ferreras - Programador Web.pdf" download>
+  <a href={CV} download>
     <i className="fa-solid fa-download"></i> Descargar CV
     </a>
   </button>
@@ -49,7 +51,7 @@ Poseo un fuerte dominio tanto del frontend como del backend.Me encanta enfrentar
 
  
  
-<img src="../src/Images/Foto_Perfile_Proyect_Main.jpg" alt="" />
+<img src={PersonlIMG} alt="" />
 
     </div>)
 

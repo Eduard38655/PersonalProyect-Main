@@ -10,6 +10,7 @@ function HomePage(params) {
     return(<article className={Styles.MainPage_Container}>
         <Header/>
         <Mobile_Header/>
+        
     <div  className={Styles.Sub_Commponents_Container}>
         <About_Me/>
         <Habilidades/>
