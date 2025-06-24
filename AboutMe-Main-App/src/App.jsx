@@ -6,7 +6,7 @@ function App() {
 
   return (
     <> 
-    <BrowserRouter>
+    <BrowserRouter basename='/Personal_Proyect'>
       <Routes>
         <Route path="/" element={<Homepage />} />
       </Routes>
