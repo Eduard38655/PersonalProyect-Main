@@ -16,7 +16,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
-app.use("",SubmitMessage)
+app.use("/",SubmitMessage)
  
 app.listen(3000, (req, res) => {
 console.log("Listening on port 3000");
