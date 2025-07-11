@@ -1,8 +1,8 @@
 import AutoMundoIMG from "../src/Images/AutoMunoIMG.png";
+import GourmetGo from "../src/Images/GourmetGO.png";
 import Intro_Form from "../src/Images/Intro_Form.png";
 import Letter from "../src/Images/LetterForm.png";
 import PokeAPI from "../src/Images/PokeAPI.png";
-
 const  ProyectosDataBase = [
     {
         id:1,
@@ -13,8 +13,17 @@ const  ProyectosDataBase = [
         enlace_demo: "https://eduard38655.github.io/AutoMundo/",
         tecnologias: ["HTML", "CSS", "React", "Postgres SQL"]
     },
-    {
+ {
         id:2,
+        titulo: "GourmetGo",
+        descripcion: "GourmetGo te lleva sabores únicos y productos gourmet directo a tu mesa.Descubre ingredientes frescos, recetas exclusivas y entregas rápidas.¡Disfruta la experiencia de comer bien sin salir de casa!",
+        imagen: GourmetGo ,
+        enlace_codigo: "https://github.com/Eduard38655/E-commersePage",
+        enlace_demo: " https://eduard38655.github.io/E-commersePage/",
+        tecnologias: ["React", "CSS", "HTML","Node","Postgres SQL"]
+    }
+    ,{
+        id:3,
         titulo: "PokeAPI",
         descripcion: "Proyecto que muestra datos de Pokémon usando la PokéAPI con una interfaz interactiva.",
         imagen: PokeAPI ,
@@ -24,7 +33,7 @@ const  ProyectosDataBase = [
     }
     ,
     {
-        id:3,
+        id:4,
         titulo: "Newsletter-sign-up-form",
         descripcion: "Formulario de suscripción a newsletter con validación de email y mensaje de éxito al registrarse.",
         imagen: Letter,
@@ -34,7 +43,7 @@ const  ProyectosDataBase = [
     }
     ,
     {
-        id:4,
+        id:5,
         titulo: "Intro component",
         descripcion: "Componente introductorio con formulario de registro y validación de campos.",
         imagen: Intro_Form,
@@ -42,6 +51,7 @@ const  ProyectosDataBase = [
         enlace_demo: "https://eduard38655.github.io/Intro-component-with-sign-up-form/",
         tecnologias: ["HTML", "CSS", "JavaScript"]
     }
+     
     
 ]
 export default ProyectosDataBase;
