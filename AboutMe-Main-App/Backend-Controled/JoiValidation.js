@@ -1,5 +1,5 @@
 import Joi from "joi";
-
+/*Joi validations */
 const schema = Joi.object({
   asunto: Joi.string().min(10).required(),
   nombre: Joi.string().min(5).required(),
