@@ -11,7 +11,7 @@ const  ProyectosDataBase = [
         imagen: AutoMundoIMG,
         enlace_codigo: "https://github.com/Eduard38655/AutoMundo",
         enlace_demo: "https://eduard38655.github.io/AutoMundo/",
-        tecnologias: ["HTML", "CSS", "React", "Postgres SQL"]
+        tecnologias: ["HTML", "CSS", "React", "Postgres SQL","Node"]
     },
  {
         id:2,
