@@ -7,7 +7,7 @@ const  ProyectosDataBase = [
     {
         id:1,
         titulo: "AutoMudo",
-        descripcion:"Automundo es una página web de autos desarrollada con React, HTML, CSS y PostgreSQL, con diseño moderno y responsivo. Permite buscar vehículos fácilmente mediante filtros avanzados y gestiona los datos de forma segura.",
+        descripcion:"Automundo es una página web de autos con diseño moderno y responsivo. Permite buscar vehículos fácilmente mediante filtros avanzados y gestiona los datos de forma segura.",
         imagen: AutoMundoIMG,
         enlace_codigo: "https://github.com/Eduard38655/AutoMundo",
         enlace_demo: "https://eduard38655.github.io/AutoMundo/",
@@ -16,7 +16,7 @@ const  ProyectosDataBase = [
  {
         id:2,
         titulo: "GourmetGo",
-        descripcion: "GourmetGo te lleva sabores únicos y productos gourmet directo a tu mesa.Descubre ingredientes frescos, recetas exclusivas y entregas rápidas.¡Disfruta la experiencia de comer bien sin salir de casa!",
+        descripcion: "Sabores únicos y productos gourmet directo a tu mesa. Descubre ingredientes frescos.¡Disfruta la experiencia de comer bien!",
         imagen: GourmetGo ,
         enlace_codigo: "https://github.com/Eduard38655/E-commersePage",
         enlace_demo: " https://eduard38655.github.io/E-commersePage/",
