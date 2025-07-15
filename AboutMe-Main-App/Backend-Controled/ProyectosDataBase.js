@@ -3,6 +3,7 @@ import GourmetGo from "../src/Images/GourmetGO.png";
 import Intro_Form from "../src/Images/Intro_Form.png";
 import Letter from "../src/Images/LetterForm.png";
 import PokeAPI from "../src/Images/PokeAPI.png";
+/*Proyects */
 const  ProyectosDataBase = [
     {
         id:1,
