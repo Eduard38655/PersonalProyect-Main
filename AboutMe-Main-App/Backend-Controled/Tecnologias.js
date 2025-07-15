@@ -1,6 +1,8 @@
 import Redux from "../src/Images/redux.svg";
+import SocketIO from "../src/Images/socket-io.png";
 import SQLServer from "../src/Images/SQL-SERVER.png";
 import PostgresSQL from "../src/Images/SQL.png";
+
 /*Tech */
  
  export const fronted=[
@@ -8,7 +10,8 @@ import PostgresSQL from "../src/Images/SQL.png";
   { id: 2, icon: "fa-brands fa-css3-alt", style: { color: "#264DE4" }, name: "CSS3" },
   { id: 3, icon: "fa-brands fa-square-js", style: { color: "#F7DF1E" }, name: "JavaScript" },
   { id: 4, icon: "fa-brands fa-react", style: { color: "#61DAFB" }, name: "React.js" },
-  { id: 5, icon: Redux , style: { color: "#61DAFB" }, name: "Redux" }
+  { id: 5, icon: Redux , style: { color: "#61DAFB" }, name: "Redux" },
+  { id: 6, icon: SocketIO, style: { color: "#61DAFB" }, name: "Socket.io" },
 ]
 
    export const backend=[
