@@ -1,7 +1,7 @@
 import Redux from "../src/Images/redux.svg";
 import SQLServer from "../src/Images/SQL-SERVER.png";
 import PostgresSQL from "../src/Images/SQL.png";
-
+/*Tech */
  
  export const fronted=[
   { id: 1, icon: "fa-brands fa-html5", style: { color: "#E34C26" }, name: "HTML5" },
