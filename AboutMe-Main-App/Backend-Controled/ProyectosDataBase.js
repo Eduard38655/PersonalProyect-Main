@@ -1,5 +1,6 @@
 import AutoMundoIMG from "../src/Images/AutoMunoIMG.png";
 import GourmetGo from "../src/Images/GourmetGO.png";
+import HeladeriaPos from "../src/Images/HeladeriaPos.png";
 import Intro_Form from "../src/Images/Intro_Form.png";
 import Letter from "../src/Images/LetterForm.png";
 import PokeAPI from "../src/Images/PokeAPI.png";
@@ -25,6 +26,15 @@ const  ProyectosDataBase = [
     }
     ,{
         id:3,
+        titulo: "Heladeria",
+        descripcion:"El proyecto de heladería consiste en un sitio web que presenta un catálogo estático de sabores, precios y fotografías de cada producto. El diseño es fijo y no se adapta a dispositivos móviles ni tabletas, garantizando una experiencia uniforme exclusivamente en pantallas de ordenador.",
+        imagen: HeladeriaPos ,
+        enlace_codigo: "https://github.com/Eduard38655/Sistema-Heladeria",
+        enlace_demo: "https://eduard38655.github.io/Sistema-Heladeria/",
+        tecnologias: ["React","CSS","Redux"]
+    }
+    ,{
+        id:4,
         titulo: "PokeAPI",
         descripcion: "Proyecto que muestra datos de Pokémon usando la PokéAPI con una interfaz interactiva.",
         imagen: PokeAPI ,
@@ -34,7 +44,7 @@ const  ProyectosDataBase = [
     }
     ,
     {
-        id:4,
+        id:5,
         titulo: "Newsletter-sign-up-form",
         descripcion: "Formulario de suscripción a newsletter con validación de email y mensaje de éxito al registrarse.",
         imagen: Letter,
@@ -44,7 +54,7 @@ const  ProyectosDataBase = [
     }
     ,
     {
-        id:5,
+        id:6,
         titulo: "Intro component",
         descripcion: "Componente introductorio con formulario de registro y validación de campos.",
         imagen: Intro_Form,
