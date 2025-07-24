@@ -27,7 +27,7 @@ const  ProyectosDataBase = [
     ,{
         id:3,
         titulo: "Heladeria",
-        descripcion:"Sitio web que presenta un catálogo estático de precios y fotografías de cada producto. El diseño es fijo y no se adapta a dispositivos móviles ni tabletas, garantizando una experiencia uniforme exclusivamente en pantallas de ordenador.",
+        descripcion:"Sitio web de escritorio con catálogo estático de productos, fotos y precios, sin adaptación para móviles.",
         imagen: HeladeriaPos ,
         enlace_codigo: "https://github.com/Eduard38655/Sistema-Heladeria",
         enlace_demo: "https://eduard38655.github.io/Sistema-Heladeria/",
