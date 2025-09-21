@@ -1,9 +1,8 @@
 import { useEffect, useState } from "react";
 import Styles from "../../Container_Styles/Header.module.css";
 function Mobile_Header(params) {
-    const[isValidMenu,SetMenuValid]=useState(false)
-    const [scrolled, setScrolled] = useState(false);
- 
+  const [isValidMenu, SetMenuValid] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,40 +16,57 @@ function Mobile_Header(params) {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
- 
 
- 
-    return( 
-      <header className={!scrolled ? Styles.Mobile_header : Styles.OnmoveMobile}>
-                <div className={Styles.Mobile_logo}>
-    <h2>Mi Portafolio</h2>
-    
-<div>
-    {!isValidMenu ? (<>
-    
-     <button onClick={(e)=>{SetMenuValid(true)}}  ><i className="fa-solid fa-bars"></i></button>
+  return (
+    <header className={!scrolled ? Styles.Mobile_header : Styles.OnmoveMobile}>
+      <div className={Styles.Mobile_logo}>
+        <h2>Mi Portafolio</h2>
 
-
-    </>) : (<>
-         <button onClick={(e)=>{SetMenuValid(false)}}  ><i className="fa-solid fa-xmark"></i></button>
-    </>)}
-      
-</div>
-
-
-
-
-
-                </div>
-                {!isValidMenu ? (<></>) : (<>
- <ul>
-                        <li><a href="#about">Sobre mi</a></li>
-                        <li><a href="#projects">Proyectos</a></li>
-                        <li><a href="#technologies">Tecnologías</a></li>
-                        <li><a href="#contact">Contacto</a></li>
-                    </ul></>)}
-            </header>
-    
-     )
+        <div>
+          {!isValidMenu ? (
+            <>
+              <button
+                onClick={(e) => {
+                  SetMenuValid(true);
+                }}
+              >
+                <i className="fa-solid fa-bars"></i>
+              </button>
+            </>
+          ) : (
+            <>
+              <button
+                onClick={(e) => {
+                  SetMenuValid(false);
+                }}
+              >
+                <i className="fa-solid fa-xmark"></i>
+              </button>
+            </>
+          )}
+        </div>
+      </div>
+      {!isValidMenu ? (
+        <></>
+      ) : (
+        <>
+          <ul>
+            <li>
+              <a href="#about">Sobre mi</a>
+            </li>
+            <li>
+              <a href="#projects">Proyectos</a>
+            </li>
+            <li>
+              <a href="#technologies">Tecnologías</a>
+            </li>
+            <li>
+              <a href="#contact">Contacto</a>
+            </li>
+          </ul>
+        </>
+      )}
+    </header>
+  );
 }
-export default Mobile_Header 
+export default Mobile_Header;

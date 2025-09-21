@@ -1,66 +1,13 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior:smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
-body{
-    width: 100%;
-    height: 100%;
-    background: #334155;
-    
-}
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.MainPage_Container{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
- justify-content: space-between;
-    gap: 20px;
-   animation: fadeInUp 1s ease-out forwards;
-}
-
-
-.Sub_Commponents_Container{
-    width: 100%;
-    height: 100%;
-    display: flex;
-     flex-direction: column;
-     justify-content: space-between;
-    align-items: center;
-    justify-content: center;
-    
- 
-    
-}
-  
-
- 
- @media screen and (min-width: 375px) and (max-width: 768px){
-  *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior:smooth;
-}
-body{
-    width: 100%;
-    height: 100%;
-    background: #334155;
-    
+body {
+  width: 100%;
+  height: 100%;
+  background: #334155;
 }
 @keyframes fadeInUp {
   from {
@@ -73,31 +20,70 @@ body{
   }
 }
 
-.MainPage_Container{
+.MainPage_Container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  gap: 20px;
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+.Sub_Commponents_Container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  body {
+    width: 100%;
+    height: 100%;
+    background: #334155;
+  }
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .MainPage_Container {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
- justify-content: space-between;
+    justify-content: space-between;
     gap: 20px;
-   animation: fadeInUp 1s ease-out forwards;
-}
+    animation: fadeInUp 1s ease-out forwards;
+  }
 
-
-.Sub_Commponents_Container{
+  .Sub_Commponents_Container {
     width: 100%;
     height: 100%;
     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     justify-content: center;
-    
- 
-    
+  }
 }
-  
-
- }

@@ -1,7 +1,9 @@
-*{
-     font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-} 
- 
+* {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
 .Proyectos_Container {
   width: 100%;
   height: auto;
@@ -11,197 +13,185 @@
   flex-direction: column;
   background-color: #111827;
   padding: 30px;
-  
 }
-.Proyectos_Container h2{
-    width: 100%;
-    height: auto;
-    text-align: center;
-    font-size: 35px;
-    font-weight: 700;
-       color: #22d3ee;
-    margin-bottom: 20px;
-}
-.Proyectos_SubContainer{
-    width: 100%;
-    height:auto;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(auto, 1fr);
-          background: #1F2937;
-      gap: 20px;
-      padding: 25px;
-      align-items: center;
-      align-content: center;
-      align-self: center;
-  border-radius: 5px 5px 5px 5px;
-}
-.Proyectos_Card{
-    width: 100%;
-    height: 450px;
-    display: flex;
- 
-    flex-direction: column;
-      background-color: #334155;
-    border-radius: 10px;
-transition: ease-out 0.3s;
- transform: scale(1);
-}
-.Proyectos_Card:hover{
- transform: scale(1.05);
-    transition: 0.3s ease;
-    box-shadow: 5px 15px 12px rgba(0, 0, 0, 0.3);
-}
-.Proyectos_Card img{
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px 10px 0 0;
-    
-}
-.Proyectos_Descripcion{
-    width: 100%;
-    height: 100%;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-}
-.Proyectos_Descripcion h3{
-    font-size: 25px;
-    font-weight: 700;
-      color: #f3f4f6;
-     
-}
-.Proyectos_Descripcion .Descripcion{
-    font-size: 14px;
-    color: #9ca3af;
-    font-weight: 500;
-} 
-.Proyectos_Tecnologias_Container {
-    width: auto;
-    height: auto;
-    display: flex;
-      gap: 10px;
-      align-items: center;
-    flex-direction: row;
-  
-}
-.Proyectos_Tecnologias_Container p{
-    width: auto;
-    height: 25px;
-    display: flex;
-    flex-direction: row;
-    color: #22d3ee;
-    font-size: 11px;
-    font-weight: 500;
-    padding: 4px;
-    background-color: #334155;
-    border: 1px solid #22d3ee;
-    border-radius: 5px;
- 
-}
-
-.Proyectos_Tecnologias_Container p:hover{
-    background-color: #22d3ee;
-    color: #111827;
-    transition: 0.3s ease-in-out;
-}
-.Proyectos_Botones{
-    width: auto;
-    height: 30px;
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    align-items: center;     
-
-}
-.Proyectos_Botones button{
-    width: 120px;
-    height: 40px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 14px;
-    font-weight: 500;
-    padding: 5px;
-}
-.Proyectos_Botones .Demo {
-    background-color: #22d3ee;
-    
-}
-.Proyectos_Botones .Repositorio {
-    background-color: transparent;
-    border: 1px solid #9ca3af;
-    
-     
-}
-.Proyectos_Botones .Demo a {
-    text-decoration: none;
-    color: #111827;
-}
- 
-.Proyectos_Botones .Repositorio a {
-    text-decoration: none;
-    color: #9ca3af;
-}
-.Proyectos_Botones .Repositorio:hover  
-   {
-    text-decoration: none;
-    color: #22d3ee;
-    border: 1px solid  #22d3ee;
-}
-.Proyectos_Botones .Repositorio:hover a{
-    text-decoration: none;
-    color: #22d3ee;
-}     
-
-.Proyectos_Botones .Demo:hover{
-   background-color: #67e8f9;
-}
- 
-.Proyectos_Botones button i{
-    font-size: 20px;
-    margin-right: 5px;
-}
-
-
- @media screen and (min-width: 375px) and (max-width: 768px){
-.Proyectos_Container {
+.Proyectos_Container h2 {
   width: 100%;
   height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;  
-  flex-direction: column;
-  background-color: #111827;
-  padding: 15px;
-  
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  color: #22d3ee;
+  margin-bottom: 20px;
 }
-.Proyectos_Container h2{
+.Proyectos_SubContainer {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+  background: #1f2937;
+  gap: 20px;
+  padding: 25px;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+  border-radius: 5px 5px 5px 5px;
+}
+.Proyectos_Card {
+  width: 100%;
+  height: 450px;
+  display: flex;
+
+  flex-direction: column;
+  background-color: #334155;
+  border-radius: 10px;
+  transition: ease-out 0.3s;
+  transform: scale(1);
+}
+.Proyectos_Card:hover {
+  transform: scale(1.05);
+  transition: 0.3s ease;
+  box-shadow: 5px 15px 12px rgba(0, 0, 0, 0.3);
+}
+.Proyectos_Card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.Proyectos_Descripcion {
+  width: 100%;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.Proyectos_Descripcion h3 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #f3f4f6;
+}
+.Proyectos_Descripcion .Descripcion {
+  font-size: 14px;
+  color: #9ca3af;
+  font-weight: 500;
+}
+.Proyectos_Tecnologias_Container {
+  width: auto;
+  height: auto;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-direction: row;
+}
+.Proyectos_Tecnologias_Container p {
+  width: auto;
+  height: 25px;
+  display: flex;
+  flex-direction: row;
+  color: #22d3ee;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 4px;
+  background-color: #334155;
+  border: 1px solid #22d3ee;
+  border-radius: 5px;
+}
+
+.Proyectos_Tecnologias_Container p:hover {
+  background-color: #22d3ee;
+  color: #111827;
+  transition: 0.3s ease-in-out;
+}
+.Proyectos_Botones {
+  width: auto;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+.Proyectos_Botones button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px;
+}
+.Proyectos_Botones .Demo {
+  background-color: #22d3ee;
+}
+.Proyectos_Botones .Repositorio {
+  background-color: transparent;
+  border: 1px solid #9ca3af;
+}
+.Proyectos_Botones .Demo a {
+  text-decoration: none;
+  color: #111827;
+}
+
+.Proyectos_Botones .Repositorio a {
+  text-decoration: none;
+  color: #9ca3af;
+}
+.Proyectos_Botones .Repositorio:hover {
+  text-decoration: none;
+  color: #22d3ee;
+  border: 1px solid #22d3ee;
+}
+.Proyectos_Botones .Repositorio:hover a {
+  text-decoration: none;
+  color: #22d3ee;
+}
+
+.Proyectos_Botones .Demo:hover {
+  background-color: #67e8f9;
+}
+
+.Proyectos_Botones button i {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 768px) {
+  .Proyectos_Container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #111827;
+    padding: 15px;
+  }
+  .Proyectos_Container h2 {
     width: 100%;
     height: auto;
     text-align: center;
     font-size: 25px;
     font-weight: 700;
-       color: #22d3ee;
+    color: #22d3ee;
     margin-bottom: 20px;
-}
-.Proyectos_SubContainer{
+  }
+  .Proyectos_SubContainer {
     width: 100%;
-    height:auto;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-       
-          background: #1F2937;
-      gap: 30px;
-      padding: 20px;
-      align-items: center;
-      align-content: center;
-      align-self: center;
-      border-radius: 5px 5px 5px 5px;
-}
-.Proyectos_Botones button{
+
+    background: #1f2937;
+    gap: 30px;
+    padding: 20px;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+    border-radius: 5px 5px 5px 5px;
+  }
+  .Proyectos_Botones button {
     width: auto;
     height: 40px;
     border: none;
@@ -210,5 +200,5 @@ transition: ease-out 0.3s;
     font-size: 14px;
     font-weight: 500;
     padding: 10px;
+  }
 }
- }

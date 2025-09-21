@@ -9,18 +9,18 @@ router.post("/SubmitData", JoiValidation, (req, res) => {
   const { nombre, email, asunto, mensaje } = req.body;
 
   const transporter = nodemailer.createTransport({
-    service: 'gmail',
+    service: "gmail",
     auth: {
       user: process.env.USER_NODER_MAILER,
-      pass:process.env.PASSWORD_NODE_MAILER
-    }
+      pass: process.env.PASSWORD_NODE_MAILER,
+    },
   });
 
   const mailOptions = {
     from: email,
     to: process.env.USER_NODER_MAILER,
     subject: asunto,
-    text: `Hello, my name is: ${nombre}. I want you to know that: ${mensaje}`
+    text: `Hello, my name is: ${nombre}. I want you to know that: ${mensaje}`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
@@ -28,12 +28,12 @@ router.post("/SubmitData", JoiValidation, (req, res) => {
       console.error("Error sending email:", error);
       return res.status(500).json({
         message: "Ha ocurrido un error al enviar el correo.",
-        detail: error.toString()
+        detail: error.toString(),
       });
     }
     console.log("Email sent:", info.response);
     return res.status(200).json({
-      message: "Correo enviado correctamente."
+      message: "Correo enviado correctamente.",
     });
   });
 });

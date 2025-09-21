@@ -7,19 +7,20 @@ import Header from "../SubComponents/Header.jsx";
 import Mobile_Header from "../SubComponents/Mobile_header.jsx";
 import Proyectos from "../SubComponents/Proyectos.jsx";
 function HomePage(params) {
-    return(<article className={Styles.MainPage_Container}>
-        <Header/>
-        <Mobile_Header/>
-        
-    <div  className={Styles.Sub_Commponents_Container}>
-        <About_Me/>
-        <Habilidades/>
-        <Proyectos/>
-        <Contacto/>
+  return (
+    <article className={Styles.MainPage_Container}>
+      <Header />
+      <Mobile_Header />
 
-    </div>
-    <Footer />
-    </article>)
+      <div className={Styles.Sub_Commponents_Container}>
+        <About_Me />
+        <Habilidades />
+        <Proyectos />
+        <Contacto />
+      </div>
+      <Footer />
+    </article>
+  );
 }
 
-export default HomePage
+export default HomePage;

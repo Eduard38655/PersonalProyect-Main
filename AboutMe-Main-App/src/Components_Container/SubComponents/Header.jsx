@@ -3,7 +3,6 @@ import Styles from "../../Container_Styles/Header.module.css";
 
 function Header() {
   const [scrolled, setScrolled] = useState(false);
- 
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,12 +16,9 @@ function Header() {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
- 
+
   return (
-    <header
-     
-    className={!scrolled ? Styles.header : Styles.Onmove}>
-    
+    <header className={!scrolled ? Styles.header : Styles.Onmove}>
       <div className={Styles.logo}>
         <h2>Mi Portafolio</h2>
         <ul>
