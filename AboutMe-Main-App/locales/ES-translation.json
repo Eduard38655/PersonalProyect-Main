@@ -1,0 +1,34 @@
+{
+  "welcome": "¡Bienvenido a mi portafolio!",
+  "about": "Sobre mí",
+  "contact": "Contacto",
+  "greeting": "Hola,",
+  "Projects": "Proyectos",
+  "MyPortfolio": "Mi Portafolio",
+  "Technologies": "Tecnologías",
+  "Hello": "Soy Eduardo Ferreras",
+  "Aboutme_Text": "Desarrollador Full Stack, especializado en la creación de aplicaciones web dinámicas, intuitivas y de alto rendimiento. Mi pasión radica en convertir ideas complejas en soluciones digitales elegantes y funcionales, utilizando tecnologías modernas y mejores prácticas de desarrollo. Poseo un fuerte dominio tanto del frontend como del backend. Me encanta enfrentar nuevos desafíos y estoy en constante aprendizaje para mantenerme al día con las últimas tendencias tecnológicas y ofrecer productos de la más alta calidad.",
+  "SeeProyectos": "Ver Proyectos",
+  "Aboutme_Text2": "Poseo un fuerte dominio tanto del frontend como del backend. Me encanta enfrentar nuevos desafíos y estoy en constante aprendizaje para mantenerme al día con las últimas tendencias tecnológicas y ofrecer productos de la más alta calidad.",
+  "DownloadCV": "Descargar CV",
+  "Skills": "Habilidades y Herramientas",
+   
+   "Project": "Proyectos",
+  "Repository" :"Repositorio", 
+  "Rights":"Todos los derechos reservados.",
+  "LetSTalk" :"¡Hablemos!",
+  "ContactForm":"Estoy disponible para oportunidades de freelance o roles de tiempo completo. Si tienes algún proyecto en mente o simplemente quieres saludar, no dudes en contactarme.",
+  "CancelEmail":"Cancelar Email",
+  "SendEmail":"Enviame un Email",
+  "FindMe":"También puedes encontrarme en:",
+  "YourName":"Tu Nombre",
+  "YourEmail" :"Tu Email",
+  "Asunto" : "Asunto",
+  "Discus" : "Hola, Me gustaria discutir...",
+  "SendMessage" :"Enviar Mensage",
+  "Require":" Campos requeridos. Al hacer clic en Enviar Mensaje, se abrirá tu cliente de correo electrónico.",
+  "Propuesta" : "Propuesta de proyectos",
+  "Message": "Mensaje"
+
+
+}

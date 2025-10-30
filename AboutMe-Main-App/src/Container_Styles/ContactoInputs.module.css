@@ -1,3 +1,35 @@
+:root {
+  --colorA: #9ca3af;
+  --Titulo: #34d399;
+  --HoverButtons: rgba(47, 229, 47, 0.592);
+  --Backgound: #25f6aa79;
+  --Green_Mate2: #10b981;
+  --Hover_Green_Mate2: #509b82;
+  --Carts_Backgound: #33415537;
+
+  /* base */
+  --btn-bg: #0ea5a4; /* color inicial (ejemplo) */
+  --btn-text: #fff;
+  --btn-radius: 8px;
+  --btn-padding: 0.6rem 1rem;
+  --btn-transition: 180ms ease;
+
+  /* hover options (elige uno por fila) */
+  --hover-mint: #34d399;
+  --hover-teal: #06b6d4;
+  --hover-emerald: #10b981;
+  --hover-lime: #84cc16;
+  --hover-forest: #065f46;
+  --hover-jungle: #047857;
+  --hover-neon: #22c55e;
+
+  --w-pure: #ffffff;
+  --w-ghost: #f8f8ff;
+  --w-frost: #f3f9ff;
+  --w-smoke: #f5f5f5;
+  --w-gain: #dcdcdc;
+  --w-warm: #fbfbf7;
+}
 .Container_Inputs {
   width: 600px;
   height: auto;
@@ -66,14 +98,14 @@
   font-size: 18px;
   font-weight: 700;
   border: none;
-  background-color: #22d3ee;
+  background-color: var(--Green_Mate2);
   cursor: pointer;
   transition: ease-in-out 0.4s;
   transform: scale(1);
 }
 .Container_Inputs .SubmitMessage:hover {
   transform: scale(1.1);
-  background-color: #67e8f9;
+  background-color: var(--Backgound);
 }
 .Container_Inputs label {
   font-size: 14px;
@@ -111,10 +143,25 @@ label span {
     justify-content: space-evenly;
     gap: 30px;
     padding: 20px;
+    z-index: 1;
   }
   .TextWarning {
     text-align: center;
     font-size: 14px;
     color: #9ca3af;
+  }
+  [data-theme="light"] .Container_Inputs div input {
+    background: transparent;
+    color: #111827;
+    border: 2px solid var(--HoverButtons);
+  }
+  [data-theme="light"] .Container_Inputs div label {
+    color: #111827;
+  }
+
+  [data-theme="light"] .Container_Inputs .DivTextarea textarea {
+    background: none;
+    color: #111827;
+    border: 2px solid var(--HoverButtons);
   }
 }

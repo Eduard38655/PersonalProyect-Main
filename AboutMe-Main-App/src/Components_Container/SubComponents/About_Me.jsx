@@ -1,29 +1,33 @@
+import { useTranslation } from 'react-i18next';
 import { Link } from "react-router-dom";
 import CV from "../../../public//CV - Eduardo Ferreras - Programador Web.pdf";
 import Styles from "../../Container_Styles/About_Me.module.css";
 import PersonlIMG from "../../Images/Foto_Perfile_Proyect_Main.jpg";
 /*Datos Personales - 2025 */
 function About_Me(params) {
+
+      const { t, i18n } = useTranslation();
+    const changeLanguage = (lng) => {
+      i18n.changeLanguage(lng);
+      // opcional: guardar preferencia
+      localStorage.setItem('lang', lng);
+   
+   
+    };
   return (
     <div className={Styles.About_Me_Container} id="about">
+      <img src={PersonlIMG} alt="" />
       <div className={Styles.About_Me_Text}>
-        <h2>Hola, soy Eduardo Ferreras</h2>
+        <h2> {t('greeting')} <span>{t('Hello')}</span> </h2>
         <br />
         <p>
-          Desarrollador Full Stack, especializado en la creación de aplicaciones
-          web dinámicas, intuitivas y de alto rendimiento. Mi pasión radica en
-          convertir ideas complejas en soluciones digitales elegantes y
-          funcionales, utilizando tecnologías modernas y mejores prácticas de
-          desarrollo.
+         {t("Aboutme_Text")}
         </p>
 
         <br />
 
         <p>
-          Poseo un fuerte dominio tanto del frontend como del backend.Me encanta
-          enfrentar nuevos desafíos y estoy en constante aprendizaje para
-          mantenerme al día con las últimas tendencias tecnológicas y ofrecer
-          productos de la más alta calidad.
+    {t("Aboutme_Text2")}
         </p>
         <br />
         <div className={Styles.Social_Media_Container}>
@@ -41,18 +45,18 @@ function About_Me(params) {
         <br />
         <div className={Styles.Buttons_Container}>
           <button>
-            <a href="#projects"> Ver mis Proyectos</a>
+            <a href="#projects"> {t("SeeProyectos")}</a>
           </button>
 
           <button>
             <a href={CV} download>
-              <i className="fa-solid fa-download"></i> Descargar CV
+              <i className="fa-solid fa-download"></i>  {t("DownloadCV")}
             </a>
           </button>
         </div>
       </div>
+       
 
-      <img src={PersonlIMG} alt="" />
     </div>
   );
 }

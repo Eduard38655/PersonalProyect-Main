@@ -1,8 +1,18 @@
 import { useEffect, useState } from "react";
+import { useTranslation } from "react-i18next";
 import Styles from "../../Container_Styles/ContactoInputs.module.css";
 
 function ContactInputs({ isEmailValid /*, setValidEmail */ }) {
+ const { t, i18n } = useTranslation();
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    
+    localStorage.setItem("lang", lng);
+
+    SetLenguague(lng);
+  };
   // Estados para los valores del formulario
+  
   const [nombre, setnombre] = useState("");
   const [email, setemail] = useState("");
   const [asunto, setasunto] = useState("");
@@ -67,8 +77,9 @@ function ContactInputs({ isEmailValid /*, setValidEmail */ }) {
         <>
           <div className={Styles.Container_Inputs}>
             <div>
+
               <label>
-                Tu Nombre <span>*</span>
+                 {t("YourName")} <span>*</span>
               </label>
               <input
                 type="text"
@@ -80,7 +91,7 @@ function ContactInputs({ isEmailValid /*, setValidEmail */ }) {
 
             <div>
               <label>
-                Tu Email <span>*</span>
+               {t("YourEmail")} <span>*</span>
               </label>
               <input
                 type="email"
@@ -96,7 +107,7 @@ function ContactInputs({ isEmailValid /*, setValidEmail */ }) {
               </label>
               <input
                 type="text"
-                placeholder="Propuesta de Proyecto"
+                placeholder={t("Propuesta")}
                 onChange={(e) => setasunto(e.target.value)}
               />
               <span className={Styles.DataError}>{errasunto}</span>
@@ -104,10 +115,10 @@ function ContactInputs({ isEmailValid /*, setValidEmail */ }) {
 
             <div className={Styles.DivTextarea}>
               <label>
-                Mensaje <span>*</span>
+                {t("Message")} <span>*</span>
               </label>
               <textarea
-                placeholder="Hola, Me gustaría discutir..."
+                placeholder={t("Discus")}
                 onChange={(e) => setmensaje(e.target.value)}
               ></textarea>
               <span className={Styles.DataError}>{errmensaje}</span>
@@ -118,12 +129,11 @@ function ContactInputs({ isEmailValid /*, setValidEmail */ }) {
               onClick={HandleData}
               className={Styles.SubmitMessage}
             >
-              Enviar Mensaje
+             {t("SendMessage")}
             </button>
           </div>
           <p className={Styles.TextWarning}>
-            <span>*</span> Campos requeridos. Al hacer clic en "Enviar Mensaje",
-            se abrirá tu cliente de correo electrónico.
+            <span>*</span>   {t("Require")}
           </p>
         </>
       )}

@@ -5,10 +5,13 @@ import Footer from "../SubComponents/Footer.jsx";
 import Habilidades from "../SubComponents/Habilidades.jsx";
 import Header from "../SubComponents/Header.jsx";
 import Mobile_Header from "../SubComponents/Mobile_header.jsx";
+import ParticlesBackground from "../SubComponents/ParticlesBackground.jsx";
 import Proyectos from "../SubComponents/Proyectos.jsx";
-function HomePage(params) {
+
+ function HomePage(params) {
   return (
     <article className={Styles.MainPage_Container}>
+                <ParticlesBackground/>
       <Header />
       <Mobile_Header />
 
@@ -17,6 +20,7 @@ function HomePage(params) {
         <Habilidades />
         <Proyectos />
         <Contacto />
+         
       </div>
       <Footer />
     </article>

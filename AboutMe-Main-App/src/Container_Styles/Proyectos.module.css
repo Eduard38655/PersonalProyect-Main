@@ -1,9 +1,12 @@
-* {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+:root {
+  --colorA: #9ca3af;
+  --Titulo: #34d399;
+  --HoverButtons: rgba(47, 229, 47, 0.592);
+  --Backgound: #12f19f;
+  --Green_Mate2: #10b981;
+  --Hover_Green_Mate2: #509b82;
+  --Carts_Backgound: #33415537;
 }
-
 .Proyectos_Container {
   width: 100%;
   height: auto;
@@ -11,7 +14,7 @@
   align-items: center;
   justify-content: space-around; /* o center, pero no ambos */
   flex-direction: column;
-  background-color: #111827;
+
   padding: 30px;
 }
 .Proyectos_Container h2 {
@@ -19,8 +22,8 @@
   height: auto;
   text-align: center;
   font-size: 35px;
-  font-weight: 700;
-  color: #22d3ee;
+  font-weight: 800;
+  color: var(--Titulo);
   margin-bottom: 20px;
 }
 .Proyectos_SubContainer {
@@ -29,7 +32,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(auto, 1fr);
-  background: #1f2937;
+
   gap: 20px;
   padding: 25px;
   align-items: center;
@@ -43,7 +46,8 @@
   display: flex;
 
   flex-direction: column;
-  background-color: #334155;
+  background-color: var(--Carts_Backgound);
+  border: 1px solid rgba(169, 234, 169, 0.2);
   border-radius: 10px;
   transition: ease-out 0.3s;
   transform: scale(1);
@@ -60,7 +64,7 @@
   border-radius: 10px 10px 0 0;
 }
 .Proyectos_Descripcion {
-  width: 100%;
+  width: auto;
   height: 100%;
   padding: 20px;
   display: flex;
@@ -70,12 +74,18 @@
 .Proyectos_Descripcion h3 {
   font-size: 25px;
   font-weight: 700;
-  color: #f3f4f6;
+  color: var(--Backgound);
 }
 .Proyectos_Descripcion .Descripcion {
+  width: 350px;
+  height: auto;
   font-size: 14px;
   color: #9ca3af;
   font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block; /* o block según tu layout */
+  vertical-align: middle;
 }
 .Proyectos_Tecnologias_Container {
   width: auto;
@@ -90,18 +100,18 @@
   height: 25px;
   display: flex;
   flex-direction: row;
-  color: #22d3ee;
-  font-size: 11px;
+  color: var(--Titulo);
+  font-size: 12px;
   font-weight: 500;
   padding: 4px;
-  background-color: #334155;
-  border: 1px solid #22d3ee;
+  background: none;
+  border: 1px solid #12f19f69;
   border-radius: 5px;
 }
 
 .Proyectos_Tecnologias_Container p:hover {
-  background-color: #22d3ee;
-  color: #111827;
+  background-color: rgb(34, 105, 34);
+  color: white;
   transition: 0.3s ease-in-out;
 }
 .Proyectos_Botones {
@@ -123,33 +133,35 @@
   padding: 5px;
 }
 .Proyectos_Botones .Demo {
-  background-color: #22d3ee;
+  background: var(--Green_Mate2);
+
+  color: #111827;
 }
-.Proyectos_Botones .Repositorio {
-  background-color: transparent;
-  border: 1px solid #9ca3af;
-}
+
 .Proyectos_Botones .Demo a {
   text-decoration: none;
   color: #111827;
 }
-
+.Proyectos_Botones .Repositorio {
+  background: none;
+  border: 1px solid rgba(188, 227, 188, 0.364);
+}
 .Proyectos_Botones .Repositorio a {
   text-decoration: none;
-  color: #9ca3af;
+  color: rgba(255, 255, 255, 0.71);
 }
 .Proyectos_Botones .Repositorio:hover {
   text-decoration: none;
   color: #22d3ee;
-  border: 1px solid #22d3ee;
-}
-.Proyectos_Botones .Repositorio:hover a {
-  text-decoration: none;
-  color: #22d3ee;
+  border: 1px solid #34d399;
 }
 
+.Proyectos_Botones .Demo:hover a {
+  color: white;
+}
 .Proyectos_Botones .Demo:hover {
-  background-color: #67e8f9;
+  color: white;
+  background-color: #509b82;
 }
 
 .Proyectos_Botones button i {
@@ -159,36 +171,27 @@
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
   .Proyectos_Container {
-    width: 100%;
+    width: auto;
     height: auto;
     display: flex;
-    align-items: center;
+    align-content: center;
     justify-content: space-around;
     flex-direction: column;
-    background-color: #111827;
     padding: 15px;
   }
+
   .Proyectos_Container h2 {
-    width: 100%;
-    height: auto;
-    text-align: center;
     font-size: 25px;
-    font-weight: 700;
-    color: #22d3ee;
-    margin-bottom: 20px;
   }
   .Proyectos_SubContainer {
-    width: 100%;
+    width: 100px;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-
-    background: #1f2937;
+    grid-template-columns: repeat(1, auto);
+    background: none;
     gap: 30px;
     padding: 20px;
-    align-items: center;
-    align-content: center;
-    align-self: center;
+    justify-content: center;
     border-radius: 5px 5px 5px 5px;
   }
   .Proyectos_Botones button {
@@ -201,4 +204,95 @@
     font-weight: 500;
     padding: 10px;
   }
+  .Proyectos_Card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+  }
+  .Proyectos_Descripcion {
+    width: 320px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0px 0px 5px 5px;
+  }
+  [data-theme="light"] .Proyectos_Card:hover {
+    box-shadow: var(--shadow);
+  }
+  [data-theme="light"] .Proyectos_Botones .Repositorio {
+    border: 1px solid #61f166;
+  }
+  [data-theme="light"] .Proyectos_Botones .Repositorio a {
+    color: #111827;
+  }
+  [data-theme="light"] .Proyectos_Card {
+    background-color: #d1fae534;
+    border: 1px solid #059669;
+  }
+  [data-theme="dark"] .Proyectos_Botones button i {
+    font-size: 20px;
+    margin-right: 5px;
+    color: white;
+  }
+  .Proyectos_Descripcion .Descripcion {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+    color: #9ca3af;
+    font-weight: 400;
+  }
+  .Proyectos_Descripcion h3 {
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--Green_Mate2);
+  }
+  [data-theme="light"] .Proyectos_Botones .Demo {
+    background: var(--Green_Mate2);
+  }
+
+  [data-theme="light"] .Proyectos_Botones .Demo a {
+    text-decoration: none;
+    color: white;
+  }
+  .Proyectos_Tecnologias_Container p {
+    width: auto;
+    height: auto;
+    font-size: 13px;
+    text-align: center;
+    font-weight: 500;
+  }
+
+  .Proyectos_Tecnologias_Container {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    flex-direction: row;
+  }
+  
+}
+
+:root {
+  --colorA: #9ca3af; /* gris neutro (bordes, labels) */
+  --Titulo: #34d399; /* verde principal / acento */
+
+  /* palette extendida */
+  --primary: #34d399; /* acento principal (botones, links) */
+  --primary-600: #059669; /* acento oscuro (hover, foco) */
+  --primary-100: #d1fae5; /* fondo suave para estados/etiquetas */
+
+  --bg: #ffffff; /* fondo principal */
+  --surface: #fbfdfb; /* superficies (cards) */
+  --text: #0f1724; /* texto principal (oscuro para contraste) */
+  --muted: #6b7280; /* texto secundario / meta-info */
+
+  --danger: #ef4444; /* errores / alertas */
+  --success: #16a34a; /* confirmación */
+  --border: #e6e9ea; /* bordes suaves */
+  --shadow: 0 6px 18px rgba(15, 23, 36, 0.08);
 }

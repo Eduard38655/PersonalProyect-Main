@@ -5,7 +5,10 @@ import PostgresSQL from "../src/Images/SQL.png";
 
 /*Tech */
 
-export const fronted = [
+/* Tech */
+
+const techStack = [
+  // Frontend
   {
     id: 1,
     icon: "fa-brands fa-html5",
@@ -32,35 +35,35 @@ export const fronted = [
   },
   { id: 5, icon: Redux, style: { color: "#61DAFB" }, name: "Redux" },
   { id: 6, icon: SocketIO, style: { color: "#61DAFB" }, name: "Socket.io" },
-];
 
-export const backend = [
+  // Backend
   {
-    id: 1,
+    id: 7,
     icon: "fa-brands fa-node-js",
     style: { color: "#339933" },
     name: "Node.js",
   },
-  { id: 2, icon: SQLServer, style: { color: "#CC2927" }, name: "SQL Server" },
+  { id: 8, icon: SQLServer, style: { color: "#CC2927" }, name: "SQL Server" },
   {
-    id: 3,
+    id: 9,
     icon: PostgresSQL,
     style: { color: "#336791" },
     name: "Postgres SQL",
   },
-];
 
-export const tools = [
+  // Tools
   {
-    id: 1,
+    id: 10,
     icon: "fa-brands fa-git-alt",
     style: { color: "#F05032" },
     name: "Github & Github Desktop",
   },
   {
-    id: 2,
+    id: 11,
     icon: "fa-solid fa-code",
     style: { color: "#007ACC" },
     name: "Visual Studio Code",
   },
 ];
+
+export default techStack;

@@ -1,7 +1,29 @@
-* {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
-    "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+:root {
+  --colorA: #9ca3af;
+  --Titulo: #34d399;
+  --HoverButtons: rgba(47, 229, 47, 0.592);
+  --Backgound: #25f6aa79;
+  --Green_Mate2:#10b981;
+  --Hover_Green_Mate2:#509b82;
+  --Carts_Backgound:#33415537;
+
+
+
+   /* base */
+  --btn-bg: #0ea5a4;            /* color inicial (ejemplo) */
+  --btn-text: #fff;
+  --btn-radius: 8px;
+  --btn-padding: 0.6rem 1rem;
+  --btn-transition: 180ms ease;
+
+  /* hover options (elige uno por fila) */
+  --hover-mint: #34D399;
+  --hover-teal:  #06B6D4;
+  --hover-emerald:#10B981;
+  --hover-lime:  #84CC16;
+  --hover-forest:#065F46;
+  --hover-jungle:#047857;
+  --hover-neon:  #22C55E;
 }
 .Contacto_Container {
   width: 100%;
@@ -10,15 +32,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #1f2937;
+  background-color: #1f293761;
   justify-content: space-around;
   gap: 20px;
   padding: 22px;
+  z-index: 1;
 }
+ [data-theme="light"]  .Contacto_Container{
+ background: none;
+  }
 .Contacto_Container h3 {
   font-size: 30px;
-  font-weight: 700;
-  color: #22d3ee;
+  font-weight: 800;
+  color: var(--Titulo);
 }
 .Contacto_Container p:nth-child(2) {
   width: 50%;
@@ -29,14 +55,14 @@
   color: #9ca3af;
 }
 .Contacto_Container button {
-  width: 240px;
-  height: 50px;
+  width: 200px;
+  height: 45px;
   border-radius: 5px;
   color: #111827;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   border: none;
-  background-color: #22d3ee;
+  background-color: var(--Green_Mate2);
   cursor: pointer;
 }
 .Contacto_Container button i {
@@ -91,8 +117,9 @@
   transition: ease-in-out 0.3s;
 }
 .xmark:hover {
-  background-color: #67e8f9;
+  background: #34D399;
   transform: scale(1.1);
+  color: rgb(34, 33, 33);
 }
 
 @media screen and (min-width: 375px) and (max-width: 768px) {
@@ -104,7 +131,7 @@
     font-weight: 400;
     color: #9ca3af;
   }
-  .Contacto_Container button {
+  [data-theme="light"]  .Contacto_Container button {
     width: auto;
     height: 50px;
     border-radius: 5px;
@@ -112,15 +139,16 @@
     font-size: 15px;
     font-weight: 700;
     border: none;
-    background-color: #22d3ee;
+    background-color: var(--Backgound);
     cursor: pointer;
     padding: 10px;
+    z-index: 1;
   }
   .Contacto_Container button i {
     margin-right: 5px;
   }
 
-  .Social_Media_Container {
+   [data-theme="light"] .Social_Media_Container {
     width: auto;
     height: 55px;
     display: flex;
@@ -133,7 +161,7 @@
     transform: scale(1);
     gap: 20px;
   }
-  .Contacto_Container p:nth-child(4) {
+   [data-theme="light"]  .Contacto_Container p:nth-child(4) {
     width: 100%;
     height: auto;
     text-align: center;
@@ -144,4 +172,18 @@
   .Redes {
     color: #9ca3af;
   }
+  
+  .Contacto_Container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+ background: none;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 22px;
+  
+}
 }

@@ -1,35 +1,41 @@
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import Styles from "../../Container_Styles/Contacto.module.css";
 import ContactInputs from "./ContactInputs";
 
 function Contacto(params) {
   const [isEmailValid, setValidEmail] = useState(false);
+ const { t, i18n } = useTranslation();
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    
+    localStorage.setItem("lang", lng);
 
+    SetLenguague(lng);
+  };
   return (
     <div className={Styles.Contacto_Container} id="contact">
-      <h3>¡Hablemos!</h3>
+      <h3>{t("LetSTalk")}</h3>
 
       <p>
-        Estoy disponible para oportunidades de freelance o roles de tiempo
-        completo. Si tienes algún proyecto en mente o simplemente quieres
-        saludar, no dudes en contactarme.
+       {t("ContactForm")}
       </p>
 
       {isEmailValid ? (
         <>
           <button className={Styles.xmark} onClick={() => setValidEmail(false)}>
-            <i className="fa-solid fa-xmark"></i> Cancelar Email
+            <i className="fa-solid fa-xmark"></i>  {t("CancelEmail")}
           </button>
         </>
       ) : (
         <>
-          {" "}
+          
           <button
             className={Styles.SendEmail}
             onClick={() => setValidEmail(!isEmailValid)}
           >
-            <i className="fa-solid fa-envelope"></i> Enviame un Email
+            <i className="fa-solid fa-envelope"></i>  {t("SendEmail")}
           </button>
         </>
       )}
@@ -39,7 +45,7 @@ function Contacto(params) {
         isEmailValid={isEmailValid}
       />
 
-      <p className={Styles.Redes}>También puedes encontrarme en:</p>
+      <p className={Styles.Redes}>{t("FindMe")}</p>
 
       <div className={Styles.Social_Media_Container}>
         <Link
