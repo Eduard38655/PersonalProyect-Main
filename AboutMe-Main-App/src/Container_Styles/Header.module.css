@@ -223,6 +223,7 @@
   [data-theme="dark"] .Mobile_header ul li a:hover {
     color: var(--DarkText);
   }
+  /*CSS*/
 
   [data-theme="dark"] .Container_Info button {
     color: white;
