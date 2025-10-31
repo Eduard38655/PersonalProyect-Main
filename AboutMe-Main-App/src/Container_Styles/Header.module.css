@@ -36,7 +36,7 @@
   gap: 25px;
   padding: 20px;
 }
- 
+
 .logo ul li a {
   transition: all 0.3s ease;
   position: relative;
@@ -45,9 +45,9 @@
   color: var(--colorA);
   font-weight: 550;
 }
- .Onmove .logo ul li a{
- color: white;
- }
+.Onmove .logo ul li a {
+  color: white;
+}
 .logo ul li a::after {
   content: "";
   position: absolute;
@@ -73,8 +73,8 @@
   justify-content: center;
   justify-content: space-between;
   gap: 30px;
-   padding:0px 30px 0px 0px;
- }
+  padding: 0px 30px 0px 0px;
+}
 .DivButtons_Headers button {
   width: auto;
   height: auto;
@@ -100,7 +100,7 @@
   background-color: var(--HeaderBackground);
   border-bottom: 1px solid var(--BorderBottom);
 }
- 
+
 .Onmove h2 {
   color: var(--TituloPrincipal);
   font-weight: 800;
@@ -189,7 +189,7 @@
     justify-content: center;
     flex-direction: column;
     top: 0;
-       z-index: 11111;
+    z-index: 11111;
     background-color: var(--HeaderBackground);
     border-bottom: 1px solid var(--BorderBottom);
   }
@@ -227,9 +227,28 @@
   [data-theme="dark"] .Container_Info button {
     color: white;
   }
-
+  [data-theme="light"] .Container_Info button i{
+ color: rgba(0, 0, 0, 0.756);  
+}
+      
   [data-theme="dark"] .OnmoveMobile ul li a {
     color: white;
+  }
+
+  [data-theme="light"] .Mobile_header ul li a {
+    color: rgba(0, 0, 0, 0.756);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 550;
+  }
+
+  [data-theme="light"] .OnmoveMobile ul li a {
+    color: rgba(0, 0, 0, 0.756);
+    padding: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 550;
   }
 
   [data-theme="dark"] .Mobile_header ul li a {
