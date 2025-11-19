@@ -1,10 +1,12 @@
 import AutoMundoIMG from "../src/Images/AutoMunoIMG.png";
 import Clockimg from "../src/Images/ClockPage.png";
+import GlobalGazzette from "../src/Images/GlobalGazzette.png";
 import GourmetGo from "../src/Images/GourmetGO.png";
 import HeladeriaPos from "../src/Images/HeladeriaPos.png";
 import Intro_Form from "../src/Images/Intro_Form.png";
 import Letter from "../src/Images/LetterForm.png";
 import PokeAPI from "../src/Images/PokeAPI.png";
+
 /*Proyects */
 const ProyectosDataBase = [
   {
@@ -27,6 +29,16 @@ const ProyectosDataBase = [
     enlace_demo: " https://eduard38655.github.io/E-commersePage/",
     tecnologias: ["React", "CSS", "HTML", "Node", "Postgres SQL"],
   },
+  ,{
+      id: 20,
+      titulo: "Global Gazette",
+      descripcion:
+        "App de blog personal para crear, editar y organizar tus publicaciones fácilmente, con diseño limpio, modo oscuro y soporte para imágenes.",
+      imagen: GlobalGazzette,
+      enlace_codigo: "https://github.com/Eduard38655/PersonalBlog",
+      enlace_demo: "https://eduard38655.github.io/PersonalBlog/",
+      tecnologias: ["React", "CSS", "HTML", "Redux"],
+    },
   {
     id: 4,
     titulo: "ChronoVault",

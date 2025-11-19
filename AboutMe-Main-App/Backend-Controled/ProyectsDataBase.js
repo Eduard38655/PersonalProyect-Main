@@ -1,10 +1,12 @@
 import AutoMundoIMG from "../src/Images/AutoMunoIMG.png";
 import Clockimg from "../src/Images/ClockPage.png";
+import GlobalGazzette from "../src/Images/GlobalGazzette.png";
 import GourmetGo from "../src/Images/GourmetGO.png";
 import HeladeriaPos from "../src/Images/HeladeriaPos.png";
 import Intro_Form from "../src/Images/Intro_Form.png";
 import Letter from "../src/Images/LetterForm.png";
 import PokeAPI from "../src/Images/PokeAPI.png";
+
 /*Projects */
 const ProyectsDataBase = [
   {
@@ -17,6 +19,17 @@ const ProyectsDataBase = [
     enlace_demo: "https://eduard38655.github.io/AutoMundo/",
     tecnologias: ["HTML", "CSS", "React", "Postgres SQL", "Node"],
   },
+  {
+    id: 20,
+    titulo: "Global Gazette",
+    descripcion:
+      "Personal blog app to easily create, edit, and organize your posts, with a clean design, dark mode, and image support.",
+    imagen: GlobalGazzette,
+    enlace_codigo: "https://github.com/Eduard38655/PersonalBlog",
+    enlace_demo: "https://eduard38655.github.io/PersonalBlog/",
+    tecnologias: ["React", "CSS", "HTML", "Redux"],
+  },
+
   {
     id: 2,
     titulo: "GourmetGo",
