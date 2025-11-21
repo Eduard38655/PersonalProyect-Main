@@ -1,12 +1,12 @@
 import AutoMundoIMG from "../src/Images/AutoMunoIMG.png";
 import Clockimg from "../src/Images/ClockPage.png";
+import Countries_API from "../src/Images/Countries_API.png";
 import GlobalGazzette from "../src/Images/GlobalGazzette.png";
 import GourmetGo from "../src/Images/GourmetGO.png";
 import HeladeriaPos from "../src/Images/HeladeriaPos.png";
 import Intro_Form from "../src/Images/Intro_Form.png";
 import Letter from "../src/Images/LetterForm.png";
 import PokeAPI from "../src/Images/PokeAPI.png";
-
 /*Proyects */
 const ProyectosDataBase = [
   {
@@ -49,6 +49,16 @@ Compra con confianza.`,
     enlace_codigo: "https://github.com/Eduard38655/bookshop",
     enlace_demo: "https://eduard38655.github.io/bookshop/",
     tecnologias: ["React", "CSS", "HTML"],
+  },
+  {
+    id: 82,
+    titulo: "Countries App",
+    descripcion:
+      "Frontendmentor challange que muestra una lista de países con detalles y funciones de búsqueda y filtrado.",
+    imagen:Countries_API,
+    enlace_codigo: "https://github.com/Eduard38655/Countries-API.git",
+    enlace_demo: "https://eduard38655.github.io/Countries-API/",
+    tecnologias: ["React"],
   },
   {
     id: 3,
