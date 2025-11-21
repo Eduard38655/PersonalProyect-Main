@@ -49,7 +49,18 @@ const ProyectsDataBase = [
     enlace_codigo: "https://github.com/Eduard38655/bookshop",
     enlace_demo: "https://eduard38655.github.io/bookshop/",
     tecnologias: ["React", "CSS", "HTML"],
-  },
+  }
+  ,
+    {
+      id: 82,
+      titulo: "Countries App",
+      descripcion:
+        "Frontendmentor challenge that shows a list of countries with details and search and filter functions.",
+      imagen:Countries_API,
+      enlace_codigo: "https://github.com/Eduard38655/Countries-API.git",
+      enlace_demo: "https://eduard38655.github.io/Countries-API/",
+      tecnologias: ["React"],
+    },
   {
     id: 3,
     titulo: "Heladeria",
