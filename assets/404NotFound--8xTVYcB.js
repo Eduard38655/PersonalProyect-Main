@@ -1,0 +1,1 @@
+import{j as s}from"./index-C4MpgZiI.js";import{S as a}from"./MainPage.module-BT5V9E5Q.js";function n(e){return s.jsxs("article",{className:a.PageOther_Container,children:[s.jsxs("h2",{children:["<404 Not Found/>"," "]}),s.jsx("i",{className:"fa-solid fa-spinner fa-spin-pulse"})]})}export{n as default};
