@@ -1,1 +1,0 @@
-import{j as s}from"./index-BMLZ-uwR.js";import{S as a}from"./MainPage.module-8sIeJgYh.js";function n(e){return s.jsxs("article",{className:a.PageOther_Container,children:[s.jsxs("h2",{children:["<Loading/>"," "]}),s.jsx("i",{className:"fa-solid fa-spinner fa-spin-pulse"})]})}export{n as default};
